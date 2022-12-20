@@ -1,0 +1,297 @@
+@keyframes transitionIn {
+  from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+  }
+
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+.wrapper { position: relative; display: inline-block; }
+
+.wrapper img { vertical-align: bottom; }
+
+.wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 20;
+}
+
+body{
+    margin: 0px;
+    background-color: #5f574d;
+    font-family: 'Titillium Web',sans-serif;
+}
+.page{
+  display: flex;
+  justify-content:  center;
+  margin: 0px;
+  height: 100%;
+}
+img.cover{
+  position: absolute;
+  z-index: 2;
+}
+.text {
+  position: absolute;
+  text-align: center;
+}
+img {
+  pointer-events: none;
+}
+h1.head{
+  margin-top: 5%;
+}
+
+/* PAGE 1 */
+.page1{
+  align-items: center;
+  animation: transitionIn ease-in 1s forwards;
+  transition-delay: 2s;
+  height: 100%;
+}
+
+.page1 img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.page1 img.bg{
+    position: absolute;
+    z-index: 1;
+    animation: transitionIn ease-in 1s forwards;
+    transition-delay: 3s;
+}
+.page1 .text{
+    z-index: 10;
+}
+.page1 h1{
+    font-size: 9vw;
+    font-weight: 600;
+    line-height: 9vw;
+    letter-spacing: 0px;
+    margin: -20px 0px 0px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    animation: transitionIn ease-in 3s;
+}
+.page1 h2{
+    letter-spacing: 1vw;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    margin: 0px;
+    font-weight: 300;
+    font-size: 1.3vw;
+    animation: transitionIn ease-in 4s;
+}
+.page1 p{
+    color: white;
+    opacity: 80%;
+    animation: transitionIn ease-in 5s;
+    font-size: 0.9vw;
+}
+/* PAGE 1 */
+
+/* PAGE 2 */
+.page2 img{
+    background-image: url('./image/background/page2bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+}
+.page2 img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+.page2 .text{
+    width: 100%;
+    z-index: 20;
+    color: white;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.page2 .text p{
+    font-size: 1vw;
+    margin: 0px;
+}
+.page2 .text .title{
+    margin-top: 10px;
+}
+.page2 p.title{
+    font-weight: 500;
+}
+/* PAGE 2 */
+
+/* PAGE 3 */
+.page3 h1 {
+    margin: 0px 15%;
+    font-size: 8vw;
+    line-height: 7vw;
+}
+.page3 img{
+    width: 100%;   
+}
+.page3 .text{
+    z-index: 20;
+    color: white;
+    margin: 6%;
+}
+/* PAGE 3 */
+
+/* PAGE 4 */
+.page4{
+  background-color: #3f3b2f;
+}
+.page4 .mainContainer{
+    background-color: #3f3b2f;
+    color: white;
+    padding: 2vw 0px;
+}
+.page4 .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.page4 .row img{
+  width: 16vw;
+  pointer-events: all;
+}
+.page4 .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page4 h1{
+  position: absolute;
+  font-size: 7vw;
+  margin: 1vw 3vw;
+}
+/* PAGE 4 */
+
+/* PAGE 5 */
+.page5 h1 {
+  margin: 0px 15%;
+  font-size: 8vw;
+  line-height: 7vw;
+}
+.page5 img{
+  width: 100%;
+}
+.page5 .text{
+  z-index: 3;
+  color: white;
+  margin: 6%;
+}
+.page5 .gif{
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin: 6%;
+}
+.page5 .gif img{
+  height: 27vw;
+  width: auto;
+  margin-top: 5.5vw;
+  margin-left: 8vw;
+  pointer-events: all;
+}
+.page5 .gif .next{
+  margin-left: 3vw;
+}
+.page5 .gif .next2{
+  margin-left: 3.5vw;
+}
+.page5 .gif .next3{
+  margin-left: 3.2vw;
+}
+.page5 .desc {
+  position: absolute;;
+  z-index: 0;
+  margin-top: 39vw;
+  margin-left: 17.5vw;
+  display: flex;
+  gap: 10.7vw;
+}
+.page5 a{
+  font-size: 0.8vw;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+/* PAGE 5 */
+
+.page6{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.page6 img{
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.page6 img.bg{
+  position: absolute;
+  z-index: 1;
+  animation: transitionIn ease-in 1s forwards;
+  transition-delay: 3s;
+}
+.page6 .text{
+  z-index: 10;
+}
+.page6 .desc{
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+.page6 .contact{
+  margin-top: 1vw;
+}
+.page6 h1{
+  font-size: 9vw;
+  font-weight: 600;
+  line-height: 9vw;
+  letter-spacing: 0px;
+  margin: -20px 0px 0px;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+  animation: transitionIn ease-in 3s;
+}
+.page6 h2{
+  letter-spacing: 1vw;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+  margin: 0px;
+  font-weight: 300;
+  font-size: 1.3vw;
+  animation: transitionIn ease-in 4s;
+}
+.page6 p{
+  color: white;
+  opacity: 100%;
+  animation: transitionIn ease-in 5s;
+  font-size: 1vw;
+}
+
+.reveal{
+  position: relative;
+  transform: rotateX(-10deg);
+  opacity: 0;
+  transition: 3s ;
+}
+.reveal.active{
+  transform: rotateX(0);
+  opacity: 1;
+}
