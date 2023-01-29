@@ -7,5 +7,5 @@ or
 
 Snapshot of the website :
 
-<img src="./img/img1.png" alt="img">
+<img src="./img/img1-1.png" alt="img">
 
